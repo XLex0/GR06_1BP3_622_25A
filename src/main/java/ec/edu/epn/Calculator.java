@@ -54,4 +54,23 @@ public class Calculator {
         ans = (float) result;
         return result;
     }
+    // Funciones trigonométricas (en radianes)
+    public double sin(double radians) {
+        double result = Math.sin(radians);
+        ans = (float) result;
+        return result;
+    }
+
+    public double cos(double radians) {
+        double result = Math.cos(radians);
+        ans = (float) result;
+        return result;
+    }
+
+    public double tan(double radians) {
+        double result = Math.tan(radians);
+        ans = (float) result;
+        return result;
+    }
+
 }

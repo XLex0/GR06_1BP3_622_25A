@@ -62,6 +62,27 @@ class CalculatorTest {
         assertEquals(-1.0, c.cosDegrees(180), 0.0001);
     }
 
+    // En radianes (sin conversión interna)
+    @Test
+    public void given_pi_over_two_radians_when_tan_then_large_result() {
+        assertTrue(Double.isInfinite(c.tan(Math.PI / 2)) || Math.abs(c.tan(Math.PI / 2)) > 1e10);
+    }
+
+    @Test
+    public void given_zero_radians_when_sin_then_ok() {
+        assertEquals(0.0, c.sin(0), 0.0001);
+    }
+
+    @Test
+    public void given_pi_over_two_radians_when_sin_then_ok() {
+        assertEquals(1.0, c.sin(Math.PI / 2), 0.0001);
+    }
+
+    @Test
+    public void given_pi_radians_when_cos_then_ok() {
+        assertEquals(-1.0, c.cos(Math.PI), 0.0001);
+    }
+
     @AfterAll
     public static void tearDown() {
         c.setAns(0);
