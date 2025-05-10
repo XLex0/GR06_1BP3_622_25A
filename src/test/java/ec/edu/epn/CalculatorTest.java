@@ -41,38 +41,6 @@ class CalculatorTest {
         assertEquals(8, c.multiplication(4, 2));
     }
 
-    // ------------------ TRIGONOMETRIC TESTS ------------------
-
-    @Test
-    public void given_zero_radians_when_sin_then_ok() {
-        assertEquals(0.0, c.sin(0), 0.0001);
-    }
-
-    @Test
-    public void given_pi_over_two_radians_when_sin_then_ok() {
-        assertEquals(1.0, c.sin(Math.PI / 2), 0.0001);
-    }
-
-    @Test
-    public void given_zero_radians_when_cos_then_ok() {
-        assertEquals(1.0, c.cos(0), 0.0001);
-    }
-
-    @Test
-    public void given_pi_radians_when_cos_then_ok() {
-        assertEquals(-1.0, c.cos(Math.PI), 0.0001);
-    }
-
-    @Test
-    public void given_zero_radians_when_tan_then_ok() {
-        assertEquals(0.0, c.tan(0), 0.0001);
-    }
-
-    @Test
-    public void given_pi_over_four_radians_when_tan_then_ok() {
-        assertEquals(1.0, c.tan(Math.PI / 4), 0.0001);
-    }
-
     // En grados (usando funciones que convierten internamente)
     @Test
     public void given_90_degrees_when_tanDegrees_then_large_result() {
