@@ -16,6 +16,9 @@ public class App {
             double cosRes = calculator.cos(Math.PI);      // cos(π) = -1
             System.out.println("Resultado de cos(π): " + cosRes);
 
+            resultado = calculator.subtraction(10, 4);
+            System.out.println("Resultado de la resta (calculator.subtraction(10, 4)): " + resultado);
+
         } catch (Exception e) {
             System.out.println("Ocurrió un error al realizar la operación: " + e.getMessage());
         }
